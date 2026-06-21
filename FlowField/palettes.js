@@ -1,4 +1,4 @@
-export const palettes = {
+const palettes = {
   "Monochrome":{
     mood: "minimal",
     background: "#F7F7F7",
