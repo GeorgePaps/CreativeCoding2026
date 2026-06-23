@@ -6,7 +6,7 @@ const rightBorder = width * 1.5;
 const topBorder = -height / 2;
 const bottomBorder = height * 1.5;
 
-const resolution = Math.floor(Math.min(width, height) / 20);
+const resolution = Math.floor(Math.min(width, height) / 25);
 
 const numCols = Math.floor((rightBorder - leftBorder) / resolution);
 const numRows = Math.floor((bottomBorder - topBorder) / resolution);
@@ -49,9 +49,9 @@ function drawArrow(cell) {
   rotate(cell.angle);
   stroke(0);
   // Draw Arrow
-  line(0, 0, resolution, 0);
-  line(resolution, 0, resolution - 5, -5);
-  line(resolution, 0, resolution - 5, 5);
+  line(0, 0, resolution * 0.5, 0);
+  line(resolution * 0.5, 0, resolution * 0.5 - 5, -5);
+  line(resolution * 0.5, 0, resolution * 0.5 - 5, 5);
   pop();
   
 } // end drawArrow function
@@ -62,7 +62,7 @@ function createCell(row, col) {
     col: col,
     x: leftBorder + col * resolution,
     y: topBorder + row * resolution,
-    angle: 80
+    angle: 45
   };
 } // end createCell function
   
