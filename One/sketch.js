@@ -1,8 +1,11 @@
 
+// save first version
 // color probabilities
 // randomness in position 
 // appear in shape
 // reduce control parameters
+// more interesting background
+// maybe some movement
 
 let colors = {
   'lemonChiffon' : '#FAF0CA',
