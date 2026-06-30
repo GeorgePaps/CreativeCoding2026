@@ -9,6 +9,8 @@ class Circle {
     draw() {
     // Implementation for drawing the circle
         noStroke();
+        // noFill();
+        // strokeWeight(3);
         fill(this.color);
         ellipse(this.x, this.y, this.radius * 2);
     }
